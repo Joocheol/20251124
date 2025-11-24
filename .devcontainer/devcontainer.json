@@ -1,0 +1,16 @@
+{
+  "name": "Manim + Minimal LaTeX",
+  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y ffmpeg libcairo2-dev texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-lang-korean tipa libpango1.0-dev python3-pip && pip install --upgrade pip && pip install manim",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/home/codespace/.python/current/bin/python"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}
