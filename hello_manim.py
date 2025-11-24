@@ -2,6 +2,6 @@ from manim import *
 
 class HelloManim(Scene):
     def construct(self):
-        text = Text("Hello, Manim in Codespaces!")
+        text = Tex("Hello, $x+1$ Manim in Codespaces!")
         self.play(Write(text))
         self.wait(1)
